@@ -30,6 +30,7 @@ For example, a data point for email derived another data point for domain. If th
 | @type | str           | krkn:observation |
 | @id | str             | id of the datapoint (uuid) |
 | @version | str        | the version of the schema |
+| thing | dict | The @type and @id of the thing the value is part of |
 | key | str             | the key the datapoint represents (schema:name, schema:url, etc) |
 | value | ANY           | the actual value of the data point (string, integer, float, dict, list, object, etc) |
 | date | datetime       | the date the data point was created, either in the original source or default to now |
@@ -49,8 +50,10 @@ For example, a data point for email derived another data point for domain. If th
   "@type": "krkn:observation",
   "@id": "6d71f9be-255d-11ee-be56-0242ac120002",
   "@version": "1.0",
-  "krkn:record_type: "schema:person",
-  "krkn:record_id" : "763dcb0e-255d-11ee-be56-0242ac120002",
+  "krkn:thing: {
+            "@type": "schema:person",
+            "@id": "763dcb0e-255d-11ee-be56-0242ac120002",
+            }
   "krkn:key":   "schema:givenName",
   "krkn:value":   "Richard",
   "krkn:date": "2021-07-27#16:01:12.090202",
