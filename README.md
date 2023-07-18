@@ -36,7 +36,7 @@ For example, a data point for email derived another data point for domain. If th
 | start | datetime      | date the value starts to be effective |
 | finish | datetime     | date the value is no longer effective |
 | credibility | float   | the credibility of the data point from 0 to 1, 1 being highest |
-| object | dict         | he object at the source of the data point. Can be system, person, etc. |
+| object | dict         | the object at the source of the data point. Can be system, person, etc. |
 | instrument | dict     | the tools that generated the data point from the object |
 | sources | list of str | The ids of the observations that generated the data point. |
 
@@ -47,7 +47,7 @@ For example, a data point for email derived another data point for domain. If th
 ```
 {
   "@type": "krkn:observation",
-  "@id": "ddffkoo33",
+  "@id": "6d71f9be-255d-11ee-be56-0242ac120002",
   "@version": "1.0",
   "krkn:key":   "schema:givenName",
   "krkn:value":   "Richard",
@@ -55,7 +55,7 @@ For example, a data point for email derived another data point for domain. If th
   "krkn:credibility": 0.4,
   "krkn:object": {
               "@type": "schema:person",
-              "@id": "223344",
+              "@id": "763dcb0e-255d-11ee-be56-0242ac120002",
               "schema:givenName": "Richard",
               "schema:familyName": "Blanc"
             },
