@@ -50,7 +50,7 @@ For example, a data point for email derived another data point for domain. If th
   "@type": "krkn:observation",
   "@id": "6d71f9be-255d-11ee-be56-0242ac120002",
   "@version": "1.0",
-  "krkn:thing: {
+  "krkn:thing": {
             "@type": "schema:person",
             "@id": "763dcb0e-255d-11ee-be56-0242ac120002",
             }
