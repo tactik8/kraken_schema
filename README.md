@@ -30,15 +30,17 @@ For example, a data point for email derived another data point for domain. If th
 | @type | str           | krkn:observation |
 | @id | str             | id of the datapoint (uuid) |
 | @version | str        | the version of the schema |
+| record_type | dict    |  the @type of the object contianing the value |
+| record_id | str       | the @id of the object contianing the value |
 | key | str             | the key the datapoint represents (schema:name, schema:url, etc) |
 | value | ANY           | the actual value of the data point (string, integer, float, dict, list, object, etc) |
 | date | datetime       | the date the data point was created, either in the original source or default to now |
 | start | datetime      | date the value starts to be effective |
 | finish | datetime     | date the value is no longer effective |
 | credibility | float   | the credibility of the data point from 0 to 1, 1 being highest |
-| object | dict         | the object at the source of the data point. Can be system, person, etc. |
+| object | dict         | the object at the source of the data point |
+| agent | dict          | the person that created the data point |
 | instrument | dict     | the tools that generated the data point from the object |
-| sources | list of str | The ids of the observations that generated the data point. |
 
 
 ### Examples
@@ -49,6 +51,8 @@ For example, a data point for email derived another data point for domain. If th
   "@type": "krkn:observation",
   "@id": "6d71f9be-255d-11ee-be56-0242ac120002",
   "@version": "1.0",
+  "krkn:record_type: "schema:person",
+  "krkn:record_id" : "983dcb0e-255d-11ft-be56-0242ac120402",
   "krkn:key":   "schema:givenName",
   "krkn:value":   "Richard",
   "krkn:date": "2021-07-27#16:01:12.090202",
