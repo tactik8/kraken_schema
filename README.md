@@ -52,19 +52,18 @@ For example, a data point for email derived another data point for domain. If th
   "@id": "6d71f9be-255d-11ee-be56-0242ac120002",
   "@version": "1.0",
   "krkn:record_type: "schema:person",
-  "krkn:record_id" : "983dcb0e-255d-11ft-be56-0242ac120402",
+  "krkn:record_id" : "763dcb0e-255d-11ee-be56-0242ac120002",
   "krkn:key":   "schema:givenName",
   "krkn:value":   "Richard",
   "krkn:date": "2021-07-27#16:01:12.090202",
   "krkn:credibility": 0.4,
-  "krkn:object": {
+  "krkn:agent": {
               "@type": "schema:person",
               "@id": "763dcb0e-255d-11ee-be56-0242ac120002",
               "schema:givenName": "Richard",
               "schema:familyName": "Blanc"
             },
   "krkn:instrument": "",
-  "krkn:sources": []
 }
 
 ```
